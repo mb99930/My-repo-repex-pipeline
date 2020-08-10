@@ -19,6 +19,12 @@
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.0.1</version>
   	</dependency>
+    <dependency>
+       <groupId>org.sonatype.nexus</groupId>
+       <artifactId>nexus-plugin-api</artifactId>
+       <version>3.24.0-01</version>
+       <scope>provided</scope>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.sonatype.nexus/nexus-plugin-api -->
 <dependency>
     <groupId>org.codehaus.mojo</groupId>
@@ -74,4 +80,16 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/simpleapp-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://localhost:8081/repository/simpleapp/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
