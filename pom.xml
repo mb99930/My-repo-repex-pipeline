@@ -25,6 +25,14 @@
        <version>3.24.0-01</version>
        <scope>provided</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api -->
+<dependency>
+    <groupId>org.codehaus.sonar</groupId>
+    <artifactId>sonar-plugin-api</artifactId>
+    <version>5.1</version>
+    <scope>provided</scope>
+</dependency>
+
   </dependencies>
   <build>
     <plugins>
